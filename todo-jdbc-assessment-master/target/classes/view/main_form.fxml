@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="478.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.todo.controller.MainFormController">
+   <children>
+      <VBox prefHeight="478.0" prefWidth="194.0" spacing="3.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#btnDashboardOnAction" prefHeight="53.0" prefWidth="194.0" style="-fx-background-color: #9980FA;" text="Dashboard" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#btnAddTaskOnAction" prefHeight="53.0" prefWidth="216.0" style="-fx-background-color: #9980FA;" text="Add Task" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="66.0" onAction="#btnDueTaskOnAction" prefHeight="53.0" prefWidth="216.0" style="-fx-background-color: #9980FA;" text="Due Tasks" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="122.0" onAction="#btnCompletedTaskOnAction" prefHeight="53.0" prefWidth="216.0" style="-fx-background-color: #9980FA;" text="Completed Tasks" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="178.0" onAction="#btnLogoutOnAction" prefHeight="53.0" prefWidth="216.0" style="-fx-background-color: #B53471;" text="Logout" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="190.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="root" layoutX="194.0" prefHeight="478.0" prefWidth="542.0" />
+   </children>
+</AnchorPane>

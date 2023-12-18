@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="478.0" prefWidth="542.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.todo.controller.AddTaskFormController">
+   <children>
+      <TextField fx:id="txtId" layoutX="22.0" layoutY="25.0" prefHeight="54.0" prefWidth="499.0" promptText="Task Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="txtDescription" layoutX="22.0" layoutY="97.0" prefHeight="205.0" prefWidth="499.0" promptText="Description">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <DatePicker fx:id="txtDate" layoutX="22.0" layoutY="324.0" prefHeight="38.0" prefWidth="499.0" promptText="Due Date" />
+      <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="22.0" layoutY="419.0" onAction="#btnAddTaskOnAction" prefHeight="38.0" prefWidth="499.0" style="-fx-background-color: #57606f;" text="Add Task" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="root" prefHeight="478.0" prefWidth="542.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.todo.controller.DueTaskFormController">
+   <children>
+      <TableView fx:id="tblDue" layoutX="11.0" layoutY="63.0" prefHeight="407.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="colDescription" prefWidth="204.0" text="Description" />
+          <TableColumn fx:id="colDueDate" prefWidth="127.0" text="Due Date" />
+            <TableColumn fx:id="colComplete" prefWidth="97.0" text="Action 1" />
+            <TableColumn fx:id="colDelete" prefWidth="91.0" text="Action 2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

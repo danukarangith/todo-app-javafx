@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="338.0" prefWidth="344.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.todo.controller.LoginFormController">
+    <children>
+        <Label layoutX="112.0" layoutY="26.0" text="Login Form" textFill="#34495e">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtUserName" layoutX="35.0" layoutY="99.0" prefHeight="41.0" prefWidth="277.0" promptText="user name" />
+        <TextField fx:id="txtPassword" layoutX="35.0" layoutY="175.0" prefHeight="41.0" prefWidth="277.0" promptText="password" />
+        <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="247.0" onAction="#btnLoginOnAction" prefHeight="32.0" prefWidth="277.0" style="-fx-background-color: #a29bfe;" text="Login">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Label layoutX="40.0" layoutY="293.0" text="Don't have an account?" textFill="#636e72" />
+        <Hyperlink layoutX="197.0" layoutY="290.0" onAction="#hyperSignUpOnAction" text="Sign up here" />
+    </children>
+</AnchorPane>
